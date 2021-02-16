@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/convue/',
   title: 'Convue',
   description: 'Convue docs website.',
   themeConfig: {

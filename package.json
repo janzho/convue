@@ -23,8 +23,7 @@
     "example:serve": "npm -C example run serve",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
-    "deploy": "sudo bash ./scripts/deploy.sh"
+    "docs:serve": "vitepress serve docs"
   },
   "husky": {
     "hooks": {
