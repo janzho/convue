@@ -1,6 +1,6 @@
 {
   "name": "convue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A vite based plugin that makes development as easy as nuxt",
   "author": "ziping <ziping@xencapital.com>",
   "license": "MIT",

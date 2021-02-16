@@ -5,7 +5,7 @@ export function getImportCode(files: string[], options: ResolvedOptions) {
 
   for (const file of files) {
     const path = `/${options.dir}/${file.slice(0, file.lastIndexOf('.'))}`
-    imports.push(`'${path}': () => import('${path}'),`)
+    imports.push(`'${path}': () => import('${`/${options.dir}/${file}`}'),`)
   }
 
   const importsCode = `const layouts = {
