@@ -202,6 +202,9 @@ export function generateClientCode(routes: Route[], middlewares: any[], options:
       }
 
       const head = to.meta.head;
+      if (head && head.title) {
+        document.title = head.title;
+      }
       if (head && head.meta) {
         const metaTags = head.meta.forEach((item) => {
           const meta = document.createElement('meta');

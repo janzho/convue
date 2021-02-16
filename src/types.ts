@@ -69,7 +69,7 @@ export interface Options {
     syncIndex?: boolean;
     /**
      * Set default route block parser, or use `<route lang=xxx>` in SFC route block
-     * @default 'json5'
+     * @default 'yaml'
      */
     routeBlockLang?: 'json5' | 'json' | 'yaml';
     /**
