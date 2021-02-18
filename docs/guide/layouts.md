@@ -44,4 +44,4 @@ export default defineComponent({
 });
 ```
 
-其他规则请[参考 layout 配置项](/config/layout)。
+其他规则请[参考 layout 配置项](/convue/config/layout)。

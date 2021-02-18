@@ -59,4 +59,4 @@ export default defineComponent({
 
 当网站的地址不在路由注册表中，如果 /src/pages 下存在 404 页面，则重定向到 /404 地址，否则就重定向到 / 地址。
 
-其他规则请[参考 page 配置项](/config/page)。
+其他规则请[参考 page 配置项](/convue/config/page)。

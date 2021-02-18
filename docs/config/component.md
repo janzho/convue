@@ -21,4 +21,4 @@
 
 默认会加载文件中需要排除的文件列表.
 
-使用指南请[参考组件](/guide/components)。
+使用指南请[参考组件](/convue/guide/components)。

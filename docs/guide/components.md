@@ -35,4 +35,4 @@ export default defineComponent({
 
 比如 src/components/app/navbar.tsx, 那么使用该组件的话需要加上 app 的前缀（app-navbar），更多层级以此类推。
 
-其他规则请[参考 component 配置项](/config/component)。
+其他规则请[参考 component 配置项](/convue/config/component)。

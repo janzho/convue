@@ -97,4 +97,4 @@ export default defineComponent({
 });
 ```
 
-其他规则请[参考 head 配置项](/config/head)。
+其他规则请[参考 head 配置项](/convue/config/head)。

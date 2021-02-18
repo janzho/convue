@@ -22,4 +22,4 @@ export default ({ redirect, store }) => {
 - app: 当前 vue 实例
 - env: 环境变量列表
 
-其他规则请[参考 page 配置项](/config/page)。
+其他规则请[参考 page 配置项](/convue/config/page)。

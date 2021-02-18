@@ -75,4 +75,4 @@ route 标签支持的语言.
 
 通过该函数可以扩展路由信息对象.
 
-使用指南请[参考路由](/guide/router)。
+使用指南请[参考路由](/convue/guide/router)。

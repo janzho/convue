@@ -36,4 +36,4 @@ const toString = instance?.appContext.config.globalProperties.$toString;
 - route: 当前路由的信息
 - env: 环境变量列表
 
-其他规则请[参考 plugin 配置项](/config/plugin)。
+其他规则请[参考 plugin 配置项](/convue/config/plugin)。

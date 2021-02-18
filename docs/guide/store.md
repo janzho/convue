@@ -56,4 +56,4 @@ export default {
 };
 ```
 
-其他规则请[参考 store 配置项](/config/store)。
+其他规则请[参考 store 配置项](/convue/config/store)。

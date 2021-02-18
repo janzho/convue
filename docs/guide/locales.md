@@ -8,4 +8,4 @@ convue 默认会加载 /src/locales 目录下的 .js|.ts 文件，并且在 vue-
 
 当修改 /src/locales 下的文件内容的时候，也会热重载，方便开发。
 
-其他规则请[参考 locale 配置项](/config/locale)。
+其他规则请[参考 locale 配置项](/convue/config/locale)。

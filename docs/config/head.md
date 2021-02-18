@@ -21,4 +21,4 @@ head 的 meta 标签设置
 
 head 的 link 标签设置
 
-使用指南请[参考head](/guide/head)。
+使用指南请[参考head](/convue/guide/head)。
