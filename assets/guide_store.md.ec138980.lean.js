@@ -1,0 +1,1 @@
+import{o as n,c as s,a}from"./app.79936fe0.js";const t='{"title":"全局 store","description":"","frontmatter":{},"headers":[{"level":2,"title":"说明","slug":"说明"}],"relativePath":"guide/store.md","lastUpdated":1613801418778}',p={},o=a('',14);p.render=function(a,t,p,e,c,u){return n(),s("div",null,[o])};export default p;export{t as __pageData};

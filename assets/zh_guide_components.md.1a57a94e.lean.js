@@ -1,0 +1,1 @@
+import{o as n,c as s,a}from"./app.79936fe0.js";const p='{"title":"全局组件","description":"","frontmatter":{},"headers":[{"level":2,"title":"多级目录","slug":"多级目录"}],"relativePath":"zh/guide/components.md","lastUpdated":1613803125495}',t={},o=a('',11);t.render=function(a,p,t,e,c,l){return n(),s("div",null,[o])};export default t;export{p as __pageData};

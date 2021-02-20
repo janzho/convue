@@ -1,0 +1,1 @@
+import{o as n,c as a,a as s}from"./app.79936fe0.js";const t='{"title":"Plugin","description":"","frontmatter":{},"headers":[{"level":2,"title":"Parameters","slug":"parameters"}],"relativePath":"guide/plugins.md","lastUpdated":1613802967358}',p={},e=s('',11);p.render=function(s,t,p,o,c,i){return n(),a("div",null,[e])};export default p;export{t as __pageData};

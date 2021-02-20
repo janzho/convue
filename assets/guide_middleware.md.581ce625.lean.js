@@ -1,0 +1,1 @@
+import{o as a,c as e,a as n}from"./app.79936fe0.js";const s='{"title":"Middleware","description":"","frontmatter":{},"headers":[{"level":2,"title":"Parameters","slug":"parameters"}],"relativePath":"guide/middleware.md","lastUpdated":1613802953091}',t={},p=n('',7);t.render=function(n,s,t,r,o,c){return a(),e("div",null,[p])};export default t;export{s as __pageData};

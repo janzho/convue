@@ -1,0 +1,1 @@
+import{o as n,c as s,a}from"./app.79936fe0.js";const p='{"title":"插件","description":"","frontmatter":{},"headers":[{"level":2,"title":"参数","slug":"参数"}],"relativePath":"zh/guide/plugins.md","lastUpdated":1613803142440}',t={},o=a('',11);t.render=function(a,p,t,e,c,l){return n(),s("div",null,[o])};export default t;export{p as __pageData};

@@ -1,0 +1,1 @@
+import{o as e,c as a,a as l}from"./app.79936fe0.js";const t='{"title":"multi-language","description":"","frontmatter":{},"headers":[{"level":2,"title":"Hot reload","slug":"hot-reload"}],"relativePath":"guide/locales.md","lastUpdated":1613802939047}',o={},r=l('',6);o.render=function(l,t,o,i,s,n){return e(),a("div",null,[r])};export default o;export{t as __pageData};

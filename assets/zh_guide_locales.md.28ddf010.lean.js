@@ -1,0 +1,1 @@
+import{o as e,c as a,a as r}from"./app.79936fe0.js";const l='{"title":"多语言","description":"","frontmatter":{},"headers":[{"level":2,"title":"热重载","slug":"热重载"}],"relativePath":"zh/guide/locales.md","lastUpdated":1613803136864}',t={},s=r('',6);t.render=function(r,l,t,o,c,h){return e(),a("div",null,[s])};export default t;export{l as __pageData};
