@@ -1,12 +1,5 @@
 # 其他配置
 
-## ssr
-
-- Type: `boolean`
-- Default: `undefined`
-
-是否开启 ssr
-
 ## loading
 
 - Type: `string`
