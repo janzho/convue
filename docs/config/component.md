@@ -2,23 +2,23 @@
 
 ## dir
 
-- Type: `string`
-- Default: `src/components`
+-Type: `string`
+-Default: `src/components`
 
-全局组件的目录设置
+Catalog settings for global components
 
 ## extensions
 
-- Type: `string[]`
-- Default: `['vue', 'js', 'ts', 'jsx', 'tsx']`
+-Type: `string[]`
+-Default: `['vue','js','ts','jsx','tsx']`
 
-默认支持的文件类型.
+File types supported by default.
 
 ## exclude
 
-- Type: `string[]`
-- Default: `[]`
+-Type: `string[]`
+-Default: `[]`
 
-默认会加载文件中需要排除的文件列表.
+The list of files that need to be excluded in the file will be loaded by default.
 
-使用指南请[参考组件](/convue/guide/components)。
+Please refer to [Reference Components](/convue/guide/components) for the usage guide.

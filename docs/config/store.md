@@ -2,23 +2,23 @@
 
 ## dir
 
-- Type: `string`
-- Default: `src/store`
+-Type: `string`
+-Default: `src/store`
 
-store的目录设置
+Store directory settings
 
 ## extensions
 
-- Type: `string[]`
-- Default: `['js', 'ts']`
+-Type: `string[]`
+-Default: `['js','ts']`
 
-默认支持的文件类型.
+File types supported by default.
 
 ## exclude
 
-- Type: `string[]`
-- Default: `[]`
+-Type: `string[]`
+-Default: `[]`
 
-默认会加载文件中需要排除的文件列表.
+The list of files that need to be excluded in the file will be loaded by default.
 
-使用指南请[参考状态](/convue/guide/store)。
+Please refer to [reference status](/convue/guide/store) for the usage guide.

@@ -1,29 +1,29 @@
-# 其他配置
+# Other configuration
 
 ## loading
 
-- Type: `string`
-- Default: `undefined`
+-Type: `string`
+-Default: `undefined`
 
-页面的 vue 实例创建完成前的 loading 颜色设置
+The loading color setting before the vue instance of the page is created
 
-使用指南请[参考head](/convue/guide/head)。
+Please refer to head](/convue/guide/head) for the usage guide.
 
 ## progress
 
-- Type: `boolean | Progress`
-- Default: `true`
+-Type: `boolean | Progress`
+-Default: `true`
 
-路由切换时的进度条设置
+Progress bar setting during route switching
 
-如果设置为 false, 则不会显示，同时也不会引入该段代码。
+If set to false, it will not be displayed and the code will not be introduced.
 
-Progress 的类型
+Progress type
 ```ts
 export interface Progress {
-  color?: string;
-  size?: string;
+   color?: string;
+   size?: string;
 }
 ```
 
-传入对象的话，可以设置进度条的颜色和尺寸。
+If you pass in an object, you can set the color and size of the progress bar.

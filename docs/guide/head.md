@@ -1,14 +1,14 @@
-# head 标签
+# head tag
 
-通常情况下，head 标签内包含了 title、meta 和 link 标签， srcript 标签我们通常写在 body 的最后面。
+Under normal circumstances, the head tag contains title, meta and link tags, and the srcript tag is usually written at the end of the body.
 
-meta 标签同时也是 SEO 中重要的一环。
+Meta tags are also an important part of SEO.
 
-## 占位符
+## Placeholder
 
-- 通过 <!-- TITLE --> 占位 title 标签的内容
-- 通过 <!-- HEAD --> 占位 head 标签需要加载的 meta 和 link 标签
-- 通过 <!-- APP --> 占位 vue 实例挂载的元素以及 loading
+-Pass <!-- TITLE --> placeholder title tag content
+-The meta and link tags that need to be loaded through the <!-- HEAD --> placeholder head tag
+-Via <!-- APP --> placeholder elements mounted by the vue instance and loading
 
 ```html
 <!DOCTYPE html>
@@ -28,33 +28,33 @@ meta 标签同时也是 SEO 中重要的一环。
 </html>
 ```
 
-## 全局设置
+## Global Settings
 
-在 vite.config.js 中的 convue 配置项中传入的为全局配置
+Passed in in the convue configuration item in vite.config.js is the global configuration
 
 ```js
-import { defineConfig } from 'vite';
-import convue from 'convue';
+import {defineConfig} from'vite';
+import convue from'convue';
 
 export default defineConfig({
   plugins: [
     ...convue({
       head: {
-        title: 'Convue',
+        title:'Convue',
         meta: [
-          { name: 'language', content: 'en-US' },
-          { name: 'author', content: 'ziping' },
+          {name:'language', content:'en-US' },
+          {name:'author', content:'ziping' },
         ],
         link: [
           {
-            rel: 'dns-prefetch',
-            href: 'https://www.googletagmanager.com',
-            crossorigin: 'crossorigin',
+            rel:'dns-prefetch',
+            href:'https://www.googletagmanager.com',
+            crossorigin:'crossorigin',
           },
           {
-            rel: 'dns-prefetch',
-            href: 'https://www.google-analytics.com/analytics.js',
-            crossorigin: 'crossorigin',
+            rel:'dns-prefetch',
+            href:'https://www.google-analytics.com/analytics.js',
+            crossorigin:'crossorigin',
           },
         ],
       },
@@ -63,18 +63,18 @@ export default defineConfig({
 });
 ```
 
-如果 title 不传的话，默认会取 packgae.json 中的 name 字段。
+If the title is not passed, the name field in packgae.json will be taken by default.
 
-## 页面单独设置
+## Page individually set
 
-我们也可以为某一个页面单独设置 head，最终该页面的 head 会包含全局设置的加上页面单独设置的内容。
+We can also set the head separately for a certain page, and finally the head of the page will contain the content of the global settings plus the individual settings of the page.
 
-同样是在 route 标签中使用 meta 对象。
+The meta object is also used in the route tag.
 
 ```js
 {
   /* <route>
-  name: 'test'
+  name:'test'
   meta:
     head:
       title: Convue
@@ -88,7 +88,7 @@ export default defineConfig({
 </route> */
 }
 
-import { defineComponent } from 'vue';
+import {defineComponent} from'vue';
 
 export default defineComponent({
   setup() {
@@ -97,4 +97,4 @@ export default defineComponent({
 });
 ```
 
-其他规则请[参考 head 配置项](/convue/config/head)。
+For other rules, please [refer to the head configuration item](/convue/config/head).

@@ -1,11 +1,11 @@
-# 多语言
+# multi-language
 
-convue 默认会加载 /src/locales 目录下的 .js|.ts 文件，并且在 vue-i18n 实例化的时候传入。
+Convue will load the .js|.ts file in the /src/locales directory by default, and pass it in when vue-i18n is instantiated.
 
-文件的命名尽量遵守规则。
+The naming of files should follow the rules as far as possible.
 
-## 热重载
+## Hot reload
 
-当修改 /src/locales 下的文件内容的时候，也会热重载，方便开发。
+When the contents of files under /src/locales are modified, they will also be hot reloaded to facilitate development.
 
-其他规则请[参考 locale 配置项](/convue/config/locale)。
+For other rules, please [refer to locale configuration items](/convue/config/locale).

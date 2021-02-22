@@ -1,27 +1,27 @@
-# 路由
+# Router
 
-convue 默认会自动加载 /src/pages 目录下的 .vue|.js|.jsx|.ts|.tsx 文件，并且生成对应文件名称的路由。
+By default, convue will automatically load the .vue|.js|.jsx|.ts|.tsx file in the /src/pages directory and generate a route corresponding to the file name.
 
-比如 /src/pages 目录下的 index.tsx 文件对应的路由地址就是 /, user.tsx 文件对应的路由地址就是 /user。
+For example, the routing address corresponding to the index.tsx file in the /src/pages directory is /, and the routing address corresponding to the user.tsx file is /user.
 
-## 动态路由
+## Dynamic routing
 
-动态路由的命名规则为 :param[.vue|.js|.jsx|.ts|.tsx]
+The naming rule for dynamic routing is: param[.vue|.js|.jsx|.ts|.tsx]
 
-## 添加路由信息
+## Add routing information
 
-在 /src/pages/index.tsx 文件中添加一个 route 标签。
+Add a route tag in the /src/pages/index.tsx file.
 
 ```js
 {
   /* <route>
-  name: 'test'
+  name:'test'
   meta:
     title: 111
 </route> */
 }
 
-import { defineComponent } from 'vue';
+import {defineComponent} from'vue';
 
 export default defineComponent({
   setup() {
@@ -30,15 +30,15 @@ export default defineComponent({
 });
 ```
 
-如果是 sfc (vue 单文件) 则不需要注释。
+If it is sfc (vue single file), no comment is required.
 
-route 标签支持的语法有 'json5' | 'json' | 'yaml'，默认为 yaml，如果是 json 语法则指定 route 的 lang 即可。
+The syntax supported by the route tag is'json5' |'json' |'yaml', the default is yaml, if it is json syntax, just specify the lang of the route.
 
 ```js
 {
   /* <route lang="json">
   {
-    name: 'test',
+    name:'test',
     meta: {
       title: 111
     }
@@ -46,7 +46,7 @@ route 标签支持的语法有 'json5' | 'json' | 'yaml'，默认为 yaml，如�
 </route> */
 }
 
-import { defineComponent } from 'vue';
+import {defineComponent} from'vue';
 
 export default defineComponent({
   setup() {
@@ -55,8 +55,8 @@ export default defineComponent({
 });
 ```
 
-## 路由重定向
+## Route redirect
 
-当网站的地址不在路由注册表中，如果 /src/pages 下存在 404 页面，则重定向到 /404 地址，否则就重定向到 / 地址。
+When the address of the website is not in the routing registry, if there is a 404 page under /src/pages, it will be redirected to the /404 address, otherwise it will be redirected to the / address.
 
-其他规则请[参考 page 配置项](/convue/config/page)。
+For other rules, please [refer to page configuration item](/convue/config/page).

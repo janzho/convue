@@ -2,23 +2,23 @@
 
 ## dir
 
-- Type: `string`
-- Default: `src/plugins`
+-Type: `string`
+-Default: `src/plugins`
 
-插件的目录设置
+Plug-in directory settings
 
 ## extensions
 
-- Type: `string[]`
-- Default: `['js', 'ts']`
+-Type: `string[]`
+-Default: `['js','ts']`
 
-默认支持的文件类型.
+File types supported by default.
 
 ## exclude
 
-- Type: `string[]`
-- Default: `[]`
+-Type: `string[]`
+-Default: `[]`
 
-默认会加载文件中需要排除的文件列表.
+The list of files that need to be excluded in the file will be loaded by default.
 
-使用指南请[参考插件](/convue/guide/plugins)。
+For the usage guide, please [reference plugin](/convue/guide/plugins).

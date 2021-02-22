@@ -1,38 +1,38 @@
-# 组件
+# Global components
 
-convue 默认会注册 /src/components 目录下的 .vue|.js|.jsx|.ts|.tsx 文件为全局组件。
+By default, convue will register the .vue|.js|.jsx|.ts|.tsx file in the /src/components directory as a global component.
 
-比如在 /src/components 下有一个 Hello.tsx 组件
+For example, there is a Hello.tsx component under /src/components
 
 ```js
-import { defineComponent } from 'vue';
+import {defineComponent} from'vue';
 
 export default defineComponent({
-  setup() {
-    return () => <div>Hello Convue!</div>;
-  },
+   setup() {
+     return () => <div>Hello Convue!</div>;
+   },
 });
 ```
 
-在页面中使用
+Use in the page
 
 ```js
-import { defineComponent } from 'vue';
-// import Hello from '/src/components/hello'; 不需要加载注册
+import {defineComponent} from'vue';
+// import Hello from'/src/components/hello'; no need to load registration
 
 export default defineComponent({
-  setup() {
-    return () => <hello></hello>;
-  },
+   setup() {
+     return () => <hello></hello>;
+   },
 });
 ```
 
-全局组件推荐用 lowercase 的写法，自定义组件用 大驼峰 的写法。
+It is recommended to use lowercase for global components, and big hump for custom components.
 
-## 多级目录
+## Multi-level directory
 
-如果 /src/components 下还存在多级目录，那么组件的的命名会以 folder-file 的形式连接。
+If there are multiple levels of directories under /src/components, then the naming of the components will be connected in the form of folder-file.
 
-比如 src/components/app/navbar.tsx, 那么使用该组件的话需要加上 app 的前缀（app-navbar），更多层级以此类推。
+For example, src/components/app/navbar.tsx, then you need to add the prefix app (app-navbar) to use this component, and so on for more levels.
 
-其他规则请[参考 component 配置项](/convue/config/component)。
+For other rules, please [refer to component configuration items](/convue/config/component).

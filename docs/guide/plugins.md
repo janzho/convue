@@ -1,39 +1,39 @@
-# 插件
+# Plugin
 
-convue 默认会自动加载 /src/plugins 目录下的 .js|.ts 文件。
+By default, convue will automatically load the .js|.ts file in the /src/plugins directory.
 
-比如编写一个的 plugin 文件
+For example, write a plugin file
 
 ```js
-import Antd from 'ant-design-vue';
-import 'ant-design-vue/dist/antd.css';
+import Antd from'ant-design-vue';
+import'ant-design-vue/dist/antd.css';
 
 export default ({ app }, inject) => {
-  app.use(Antd);
+   app.use(Antd);
 
-  inject('sayHello', (obj) => {
-    console.log('Hello Convue!');
-  });
+   inject('sayHello', (obj) => {
+     console.log('Hello Convue!');
+   });
 };
 ```
 
-访问 sayHello 函数
+Access the sayHello function
 
 ```js
 const instance = getCurrentInstance();
 const toString = instance?.appContext.config.globalProperties.$toString;
 ```
 
-## 参数
+## Parameters
 
-函数有两个参数，第一个为组件实例相关的信息，第二个为 inject 函数（通过 inject 函数注册的函数会自动加载进 app.config.global.properties 中）。
+The function has two parameters, the first is the information about the component instance, and the second is the inject function (functions registered through the inject function will be automatically loaded into app.config.global.properties).
 
-第一个参数说明：
+The first parameter description:
 
-- app: 当前 vue 实例
-- store: 全局状态访问
-- router: 当前路由对象
-- route: 当前路由的信息
-- env: 环境变量列表
+-app: current vue instance
+-store: access to global status
+-router: current routing object
+-route: current route information
+-env: list of environment variables
 
-其他规则请[参考 plugin 配置项](/convue/config/plugin)。
+For other rules, please [refer to plugin configuration item](/convue/config/plugin).

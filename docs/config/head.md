@@ -2,23 +2,23 @@
 
 ## title
 
-- Type: `string`
-- Default: `package.json 中的 name 字段`
+-Type: `string`
+-Default: `name field in package.json`
 
-document.title 设置
+document.title settings
 
 ## meta
 
-- Type: `Record<string, string>[]`
-- Default: `undefined`
+-Type: `Record<string, string>[]`
+-Default: `undefined`
 
-head 的 meta 标签设置
+Head’s meta tag settings
 
 ## link
 
-- Type: `Record<string, string>[]`
-- Default: `undefined`
+-Type: `Record<string, string>[]`
+-Default: `undefined`
 
-head 的 link 标签设置
+link tag settings for head
 
-使用指南请[参考head](/convue/guide/head)。
+Please refer to head](/convue/guide/head) for the usage guide.

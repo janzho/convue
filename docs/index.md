@@ -1,40 +1,39 @@
-# 什么是 convue？
+# convue
+convue is a plugin for vite based on vite and vue3 that gives you a set of experiences for rapid development projects, similar to nuxt and umi.js.Reference documents:[https://ziping-li.github.io/convue/](https://ziping-li.github.io/convue/).
 
-convue 是一个基于 vite 和 vue3 开发的一个 vite 的插件，让你拥有一套快速开发项目的体验，类似于 nuxt 和 umi.js。
+## Motivation and advantages
 
-## 动机与优势
+1. umi.js does not support vue at the moment, and nuxt does not yet have perfect support for vue3 and vite.
+2. convue is a plugin for vite, which is closer to the official vue base ecosystem and can integrate perfectly with other base libraries.
+3. convue is only a development dependency, compared to other frameworks, the size of the build is almost 0.
 
-1. umi.js 暂时不支持 vue，而 nuxt 还没有完美支持 vue3 和 vite；
-2. convue 因为只是 vite 的一个插件，更接近于 vue 官方的基础生态，能完美融合其他基础库；
-3. convue 仅仅是一个开发依赖，相对于其他框架而言，构建之后的体积几乎为 0。
+## Quick start
 
-## 快速上手
-
-1. 安装 convue.
+1. install convue.
 
 ```bash
 yarn add convue -D
 ```
 
-2. 在项目中使用
+2. Use it in your project
 
-在 vite.config.js 中使用
+Use it in vite.config.js
 
 ```js
 import convue from 'convue';
 
 export default defineConfig({
   plugins: [
-    ...convue({}),
+    ... .convue({}),
   ],
 });
 ```
 
-3. 在 main.js 中引入需要的包，如果不需要的则可以不引入
+3. Introduce the required packages in main.js, or leave them out if you don't need them
 
 ```js
 import { createApp } from 'vue';
-import App from './src/App.vue';
+import App from '. /src/App.vue';
 import router from 'pages-generated';
 import globalComponent from 'components-generated';
 import store from 'store-generated';
@@ -42,7 +41,7 @@ import plugin from 'plugin-generated';
 import i18n from 'locale-generated';
 
 const app = createApp(App);
-window.__APP__ = app; // 为了让 middleware 能获取到组件实例，如果不需要使用可以移除该行
+window.__APP__ = app; // To allow middleware to get the component instance, remove the line if you don't need to use it
 
 app.use(router);
 app.use(globalComponent);
@@ -52,52 +51,51 @@ app.use(i18n);
 app.mount('#app');
 ```
 
-## 使用脚手架
+## Using convue-cli
 
-convue 提供了一套初始化项目的脚手架工具，目前支持 sfc (vue 单文件) 形式和 tsx 方式两种开发模式。
+convue provides a set of scaffolding tools for initializing projects, currently supporting both sfc (vue single file) and tsx development modes.
 
 ```bash
 # step 1
 yarn global add convue-cli
-# step 2 - 在命令行中输入 convue, 后续会提示操作
+# step 2 - type convue on the command line, followed by a prompt to do
 convue
-# step 3 - 进入项目文件
+# step 3 - enter the project file
 npm run dev
 ```
 
-## 项目目录
+## Project directory
 
-convue 采用约定式的目录形式，因此我们需要遵守这一套开发方式.往往在项目中要做到统一规范，提高效率，这是一种有效的措施。
+convue uses an agreed-upon directory format, so we need to follow this development style. It is often an effective measure to achieve uniformity and efficiency in a project.
 
-如果你需要改变目录结构，可以[参考配置项](/convue/config/page)。
+If you need to change the directory structure, you can [refer to the configuration item](https://ziping-li.github.io/convue/config/page).
 
-以 tsx 形式为例：
+Take the tsx form as an example.
 
 ```js
-.
 ├── public
 ├── src
-    ├── components
+    ├─ components
     ├── layouts
-        ├── default.tsx
-    ├── locales
-        ├── en-US.ts
+        ├─ default.tsx
+    ├─ locales
+        ├─ en-US.ts
         ├── zh-CN.ts
-    ├── middleware
+    ├─ middleware
     ├── pages
         └── index.tsx
-    ├── plugins
-    ├── store
+    ├─ plugins
+    ├─ store
     └── App.tsx
 ├── .babelrc
 ├── .eslintrc.js
 ├── .gitignore
 ├── .prettierrc
-├── .stylelintrc.json
+├─ .stylelintrc.json
 ├── index.html
-├── package.json
-├── shims.d.ts
-├── tsconfig.json
-├── vite.config.ts
+├─ package.json
+├─ shims.d.ts
+├─ tsconfig.json
+├─ vite.config.ts
 ├── yarn.lock
 ```

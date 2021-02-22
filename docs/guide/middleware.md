@@ -1,25 +1,25 @@
-# 中间件
+# Middleware
 
-convue 默认会加载 /src/middleware 目录下的 .ts | .js 文件，并且在路由全局的前置钩子中执行。
+By default, convue will load the .ts | .js file in the /src/middleware directory and execute it in the pre-hook of the routing global.
 
-比如编写一个 auth 的中间件
+For example, write an auth middleware
 
 ```js
 export default ({ redirect, store }) => {
-  if (!store.state.isLogined) {
-    redirect('/login');
-  }
+   if (!store.state.isLogined) {
+     redirect('/login');
+   }
 };
 ```
 
-## 参数
+## Parameters
 
-- query: 当前路由的 query 参数
-- params: 当前路由的 params 参数
-- route: 当前路由的信息
-- redirect: 重定向函数，接受一个 url 作为参数
-- store: 全局状态访问
-- app: 当前 vue 实例
-- env: 环境变量列表
+-query: query parameter of the current route
+-params: params parameters of the current route
+-route: current route information
+-redirect: redirect function, accept a url as a parameter
+-store: access to global status
+-app: current vue instance
+-env: list of environment variables
 
-其他规则请[参考 page 配置项](/convue/config/page)。
+For other rules, please [refer to page configuration item](/convue/config/page).

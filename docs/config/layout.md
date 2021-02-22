@@ -2,23 +2,23 @@
 
 ## dir
 
-- Type: `string`
-- Default: `src/layouts`
+-Type: `string`
+-Default: `src/layouts`
 
-布局的目录设置
+Directory settings for layout
 
 ## extensions
 
-- Type: `string[]`
-- Default: `['vue', 'js', 'ts', 'jsx', 'tsx']`
+-Type: `string[]`
+-Default: `['vue','js','ts','jsx','tsx']`
 
-默认支持的文件类型.
+File types supported by default.
 
 ## exclude
 
-- Type: `string[]`
-- Default: `[]`
+-Type: `string[]`
+-Default: `[]`
 
-默认会加载文件中需要排除的文件列表.
+The list of files that need to be excluded in the file will be loaded by default.
 
-使用指南请[参考布局](/convue/guide/layouts)。
+Please refer to [Refer to Layout](/convue/guide/layouts) for the usage guide.
