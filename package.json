@@ -1,6 +1,6 @@
 {
   "name": "convue",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "convue is a plugin for vite based on vite and vue3 that gives you a set of experiences for rapid development projects, similar to nuxt and umi.js.",
   "author": "ziping <ziping@xencapital.com>",
   "license": "MIT",
